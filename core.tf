@@ -1,10 +1,3 @@
-terraform {
-  backend "atlas" {
-    name    = "westpac/azure-core-odev"
-    address = "https://atlas.hashicorp.com"
-  }
-}
-
 #############################
 ## Variables
 #############################
@@ -24,7 +17,7 @@ variable environment                      { type = "string" }
 ## Resource Group
 #############################
 module core_sydney {
-  source = "git@github.com:WestpacCloudEngineering/tf-module-azure-core.git"
+  source = "git@github.com/WestpacCloudEngineering/tf-module-azure-core.git"
 
   account_name = "${var.environment}coresyd"
   location = "Australia East"
@@ -36,7 +29,7 @@ module core_sydney {
 }
 
 module core_melbourne {
-  source = "git@github.com:WestpacCloudEngineering/tf-module-azure-core.git"
+  source = "git@github.com/WestpacCloudEngineering/tf-module-azure-core.git"
 
   account_name = "${var.environment}coremelb"
   location = "Australia Southeast"
