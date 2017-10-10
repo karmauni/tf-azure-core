@@ -1,11 +1,11 @@
-sydney_network_address_space   = ["10.100.0.0/16"]
-sydney_public_address_space    = "10.100.0.0/18"
-sydney_edge_address_space      = "10.100.64.0/18"
-sydney_private_address_space   = "10.100.128.0/17"
+sydney_network_address_space   = ["10.100.0.0/19"]
+sydney_public_address_space    = "10.100.0.0/21"
+sydney_data_address_space      = "10.100.8.0/21"
+sydney_private_address_space   = "10.100.16.0/20"
 
-victoria_network_address_space   = ["10.101.0.0/16"]
-victoria_public_address_space    = "10.101.0.0/18"
-victoria_edge_address_space      = "10.101.64.0/18"
-victoria_private_address_space   = "10.101.128.0/17" 
+victoria_network_address_space   = ["10.101.0.0/19"]
+victoria_public_address_space    = "10.101.0.0/21"
+victoria_data_address_space      = "10.101.8.0/21"
+victoria_private_address_space   = "10.101.16.0/20" 
 
 environment                      = "odev"
